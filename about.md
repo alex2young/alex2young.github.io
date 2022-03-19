@@ -26,6 +26,6 @@ titles:
 key: page-about
 ---
 
-你好，我是松拨鼠。
+你好，人。
 
-Hello, this is PrairieSquirrNio.
+Hello, human.
