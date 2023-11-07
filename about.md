@@ -26,6 +26,8 @@ titles:
 key: page-about
 ---
 
-你好，人。
+> Ecce Homo
 
-Hello, human.
+> Wo Es was, soll Ich werden
+
+致力于强行误读哲学与精神分析
