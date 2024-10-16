@@ -1,6 +1,5 @@
 ---
 title: Hello darkness my old friend
-tags: LIFE
 ---
 
 ## Red Pill
