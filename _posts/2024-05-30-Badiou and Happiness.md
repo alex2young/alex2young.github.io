@@ -2,7 +2,7 @@
 title: Badiou and Happiness
 ---
 
-2023 was a year marked by intensive reading. In the latter part of the year, as the golden autumn breeze of New England gave way to a chilling winter gale, I borrowed "Happiness" from MIT’s Hayden Library. This was my introduction to Alain Badiou, and, unsurprisingly, led me to Gilles Deleuze's "Nietzsche and Philosophy" shortly thereafter. <!--more-->
+2023 was a year marked by intensive reading.<!--more--> In the latter part of the year, as the golden autumn breeze of New England gave way to a chilling winter gale, I borrowed "Happiness" from MIT’s Hayden Library. This was my introduction to Alain Badiou, and, unsurprisingly, led me to Gilles Deleuze's "Nietzsche and Philosophy" shortly thereafter.
 
 ### Two Poles
 It is only fair to apprehend the recent developments in Western philosophy through the opposing poles of Badiou and Deleuze. Their philosophies diverge significantly: Badiou focuses on concepts such as Rejection, Interruption, Subjectivation, and Twoness, while Deleuze espouses Affirmation, Continuity, Life, and Multiplicity.
