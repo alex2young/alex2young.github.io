@@ -1,0 +1,318 @@
+---
+layout: null
+---
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>认知的宫殿与监狱</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;700&display=swap');
+        body {
+            font-family: 'Noto Sans SC', sans-serif;
+        }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 300px;
+            max-height: 400px;
+        }
+        @media (min-width: 768px) {
+            .chart-container {
+                height: 400px;
+            }
+        }
+    </style>
+</head>
+<body class="bg-[#F9FAFB] text-[#333]">
+
+    <!-- Palette: Brilliant Blues (#004AAD, #0A69D9, #48A1FF, #8BC8FF, #D6EBFF) -->
+    <!-- Narrative Plan: 1. Header. 2. Timeline of 'Cognition' (HTML). 3. Commoditization (Donut Chart). 4. Spectator's Logic (HTML Comparison List). 5. Cognizer vs. Creator (Radar Chart). 6. Conclusion (Key Questions). -->
+    <!-- Visualizations: 1. Timeline (HTML/Tailwind, Goal: Change, NO SVG/Mermaid). 2. Donut (Chart.js/Canvas, Goal: Compare, NO SVG). 3. Comparison List (HTML/Tailwind, Goal: Organize, NO SVG/Mermaid). 4. Radar (Chart.js/Canvas, Goal: Compare, NO SVG). 5. Key Questions (HTML, Goal: Inform, NO SVG). -->
+    <!-- Confirmed: This file contains NO SVG and NO Mermaid JS. -->
+
+    <div class="container mx-auto p-4 md:p-8 max-w-5xl">
+
+        <header class="text-center mb-16">
+            <h1 class="text-3xl md:text-5xl font-bold text-center mb-3 text-[#004AAD]">
+                认知的宫殿与监狱
+            </h1>
+            <p class="text-xl text-center text-gray-600">
+                一场关于“知道”、“行动”与“存在”的思想考古
+            </p>
+        </header>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+            <section class="md:col-span-2 bg-white rounded-lg shadow-lg p-6 md:p-8">
+                <h2 class="text-2xl font-bold text-[#004AAD] mb-4">“认知”的流变：从术语到热词</h2>
+                <p class="text-gray-700 mb-8 leading-relaxed">
+                    “认知”一词本是中性的心理学术语。但从2016年“知识付费元年”开始，它被包装为核心商品；随后的投机热潮更将其推上神坛，用以解释贫富差距。它迅速演变为一个万能的社会热词，许诺着一条通往“掌控命运”的捷径，也制造了无尽的集体焦虑。
+                </p>
+                <div class="relative pl-8 border-l-4 border-[#0A69D9]">
+                    <div class="relative mb-10">
+                        <div class="absolute -left-10 top-1 w-4 h-4 bg-[#0A69D9] rounded-full"></div>
+                        <p class="font-bold text-[#004AAD] text-lg">明治末期</p>
+                        <p class="text-gray-700">学术翻译：作为中性心理学词汇 (cognition) 被引入。</p>
+                    </div>
+                    <div class="relative mb-10">
+                        <div class="absolute -left-10 top-1 w-4 h-4 bg-[#0A69D9] rounded-full"></div>
+                        <p class="font-bold text-[#004AAD] text-lg">~2016年 “知识付费元年”</p>
+                        <p class="text-gray-700">商品化：被包装为可“提升”和“变现”的核心商品。</p>
+                    </div>
+                    <div class="relative mb-10">
+                        <div class="absolute -left-10 top-1 w-4 h-4 bg-[#0A69D9] rounded-full"></div>
+                        <p class="font-bold text-[#004AAD] text-lg">2017-2018年 “投机热潮”</p>
+                        <p class="text-gray-700">神话化：成为解释“暴富”的完美理由，迅速渗透互联网。</p>
+                    </div>
+                    <div class="relative">
+                        <div class="absolute -left-10 top-1 w-4 h-4 bg-[#0A69D9] rounded-full"></div>
+                        <p class="font-bold text-[#004AAD] text-lg">当下</p>
+                        <p class="text-gray-700">流行语：“认知决定上限”，成为时代金句与广泛不安的来源。</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="bg-white rounded-lg shadow-lg p-6 md:p-8">
+                <h2 class="text-2xl font-bold text-[#004AAD] mb-4">一、购物者的避难所</h2>
+                <p class="text-gray-700 mb-6 leading-relaxed">
+                    认知话语的第一个秘密，是它将智慧彻底商品化。市场兜售一种“认知觉醒”的幻觉，诱惑我们跳过最根本的劳作。我们沉迷于符号游戏，用模型替代感触，逃避现实的泥泞，升格为生命的分析师与旁观者。
+                </p>
+                <h3 class="text-xl font-bold text-gray-800 text-center mb-4">“认知”的商品组合</h3>
+                <div class="chart-container">
+                    <canvas id="productMixChart"></canvas>
+                </div>
+                <p class="text-center text-gray-600 text-sm mt-4">
+                    图表讽刺地展示了“认知”被简化为可交易的商品，如课程、摘要和速成秘诀。
+                </p>
+            </section>
+
+            <section class="bg-white rounded-lg shadow-lg p-6 md:p-8">
+                <h2 class="text-2xl font-bold text-[#004AAD] mb-4">被背叛的成长</h2>
+                <p class="text-gray-700 mb-6 leading-relaxed">
+                    与速成的“认知商品”相对，真切的理解与智慧从来不是结论或模型，而是斗争的结果。它必须经由身体的劳作与时间的沉淀，在无数次失败中锻造，最终生长于血肉之中。
+                </p>
+                <h3 class="text-xl font-bold text-gray-800 mb-4">真正智慧的要素</h3>
+                <ul class="list-none space-y-4 mt-6">
+                    <li class="flex items-start">
+                        <span class="text-3xl mr-3 text-[#004AAD]">🛠️</span>
+                        <div>
+                            <h4 class="font-bold text-lg">漫长的力行</h4>
+                            <p class="text-gray-700">如手艺人般反复触摸材料，在实践中锻造直觉。</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-3xl mr-3 text-[#004AAD]">⏳</span>
+                        <div>
+                            <h4 class="font-bold text-lg">时间的沉淀</h4>
+                            <p class="text-gray-700">经验必须沉淀于时间和肉身，而非停留在语义层。</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-3xl mr-3 text-[#004AAD]">🩹</span>
+                        <div>
+                            <h4 class="font-bold text-lg">失败与体证</h4>
+                            <p class="text-gray-700">理解是斗争的结果，必先争而后得。</p>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+            
+            <section class="md:col-span-2 bg-white rounded-lg shadow-lg p-6 md:p-8">
+                <h2 class="text-2xl font-bold text-[#004AAD] mb-4">二、旁观者的阶梯</h2>
+                <p class="text-gray-700 mb-6 leading-relaxed">
+                    认知话语的第二个秘密，在于它建立了一套隐蔽的权力结构。“认知局限”成了终止对话、确立优越感的社会武器。这套话语的发明者和最大受益者，是那些渴望解释世界却又从未行动的“旁观者”。他们发明了一套完美的归因游戏，让自己永远立于不败之地。
+                </p>
+                <h3 class="text-xl font-bold text-gray-800 text-center mb-6">旁观者的“归因游戏”</h3>
+                <div class="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="border-l-4 border-green-500 pl-4 py-2">
+                        <p class="font-bold text-lg text-green-700">当“行动者”成功时</p>
+                        <p class="text-gray-800 text-xl font-semibold my-2">“啊，这是他的认知高度。”</p>
+                        <p class="text-sm text-gray-600"><strong>旁观者逻辑：</strong> 成功被归因为智力问题。我的“未行动”只是因为“没认知到”，而非“不敢”。我保全了智力优越感。</p>
+                    </div>
+                    <div class="border-l-4 border-red-500 pl-4 py-2">
+                        <p class="font-bold text-lg text-red-700">当“行动者”失败时</p>
+                        <p class="text-gray-800 text-xl font-semibold my-2">“看，这是他的认知局限。”</p>
+                        <p class="text-sm text-gray-600"><strong>旁观者逻辑：</strong> 失败也被归因为智力问题。我的“未行动”是“高认知”的体现，是理性的胜利。</p>
+                    </div>
+                </div>
+                <p class="text-center text-gray-600 text-sm mt-6">
+                    在这场游戏中，行动者无论成败都是标本，而从未下场的旁观者却垄断了定义权，成为了永远的“高认知者”。
+                </p>
+            </section>
+
+            <section class="md:col-span-2 bg-white rounded-lg shadow-lg p-6 md:p-8">
+                <h2 class="text-2xl font-bold text-[#004AAD] mb-4">三、创造者的遗忘</h2>
+                <p class="text-gray-700 mb-6 leading-relaxed">
+                    这套话语的根底，是一种深刻的无力感与“怯弱”。沉迷于“认知层级”的人，往往是在现实创造中无能为力的人。他们不敢行动，因为行动意味着风险。于是，他们将一个关乎“意志”与“决断”的实践问题，伪装成一个关于“知识”与“学习”的技术问题，以此获得精致的安全感。
+                </p>
+                <h3 class="text-xl font-bold text-gray-800 text-center mb-4">“认知者” vs “创造者”</h3>
+                <div class="chart-container">
+                    <canvas id="roleComparisonChart"></canvas>
+                </div>
+                <p class="text-center text-gray-600 text-sm mt-4">
+                    雷达图对比了两种角色的核心价值：“认知者”专注于分析模型和回避风险，而“创造者”的冲动是行动、承担并创造新价值。
+                </p>
+            </section>
+
+            <section class="md:col-span-2 bg-gray-800 text-white rounded-lg shadow-lg p-6 md:p-10">
+                <h2 class="text-2xl font-bold text-white mb-4 text-center">结语：在认知之外</h2>
+                <p class="text-gray-300 mb-8 leading-relaxed text-center max-w-3xl mx-auto">
+                    我们热衷于谈论“认知”，也许恰恰是为了不去“承担”。这座宫殿用符号的秩序抵御了现实的混乱，但也成为了囚禁我们的监狱。最终，该问的恐怕不是“我的认知在哪个层级”，而是三个更根本的问题：
+                </p>
+                <div class="flex flex-col md:flex-row justify-around items-center text-center mt-8 space-y-8 md:space-y-0">
+                    <div class="p-4 m-2">
+                        <p class="text-2xl md:text-3xl font-bold text-[#8BC8FF]">我意愿成为什么？</p>
+                        <p class="text-gray-300 mt-2">(关乎意志)</p>
+                    </div>
+                    <div class="p-4 m-2">
+                        <p class="text-2xl md:text-3xl font-bold text-[#8BC8FF]">我正在创造什么？</p>
+                        <p class="text-gray-300 mt-2">(关乎行动)</p>
+                    </div>
+                    <div class="p-4 m-2">
+                        <p class="text-2xl md:text-3xl font-bold text-[#8BC8FF]">我承担了什么？</p>
+                        <p class="text-gray-300 mt-2">(关乎决断)</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <footer class="text-center text-gray-500 text-sm mt-12 pb-8">
+            内容基于《认知的宫殿与监狱：智力时代的精神安慰》一文进行概念可视化。
+        </footer>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const chartTooltipTitleCallback = (tooltipItems) => {
+                const item = tooltipItems[0];
+                let label = item.chart.data.labels[item.dataIndex];
+                if (Array.isArray(label)) {
+                    return label.join(' ');
+                } else {
+                    return label;
+                }
+            };
+
+            const ctx1 = document.getElementById('productMixChart');
+            if (ctx1) {
+                new Chart(ctx1.getContext('2d'), {
+                    type: 'doughnut',
+                    data: {
+                        labels: ['付费课程', '金句速览', '读书摘要', '“暴富”秘诀'],
+                        datasets: [{
+                            label: '“认知”商品组合',
+                            data: [35, 25, 20, 20],
+                            backgroundColor: [
+                                '#0A69D9',
+                                '#48A1FF',
+                                '#8BC8FF',
+                                '#D6EBFF'
+                            ],
+                            borderColor: '#ffffff',
+                            borderWidth: 2
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        plugins: {
+                            legend: {
+                                position: 'bottom',
+                                labels: {
+                                    font: {
+                                        family: "'Noto Sans SC', sans-serif"
+                                    }
+                                }
+                            },
+                            tooltip: {
+                                callbacks: {
+                                    title: chartTooltipTitleCallback
+                                }
+                            }
+                        }
+                    }
+                });
+            }
+
+            const ctx2 = document.getElementById('roleComparisonChart');
+            if (ctx2) {
+                new Chart(ctx2.getContext('2d'), {
+                    type: 'radar',
+                    data: {
+                        labels: ['分析模型', '回避风险', '解释世界', '遵循规则', '意志决断', '承担风险', '创造世界', '定义价值'],
+                        datasets: [
+                            {
+                                label: '“认知者” (旁观者)',
+                                data: [9, 9, 8, 7, 2, 1, 1, 3],
+                                fill: true,
+                                backgroundColor: 'rgba(72, 161, 255, 0.2)',
+                                borderColor: '#48A1FF',
+                                pointBackgroundColor: '#48A1FF',
+                                pointBorderColor: '#fff',
+                                pointHoverBackgroundColor: '#fff',
+                                pointHoverBorderColor: '#48A1FF'
+                            },
+                            {
+                                label: '“创造者” (行动者)',
+                                data: [4, 3, 5, 4, 9, 9, 10, 10],
+                                fill: true,
+                                backgroundColor: 'rgba(0, 74, 173, 0.2)',
+                                borderColor: '#004AAD',
+                                pointBackgroundColor: '#004AAD',
+                                pointBorderColor: '#fff',
+                                pointHoverBackgroundColor: '#fff',
+                                pointHoverBorderColor: '#004AAD'
+                            }
+                        ]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        scales: {
+                            r: {
+                                beginAtZero: true,
+                                max: 10,
+                                grid: {
+                                    color: '#ddd'
+                                },
+                                angleLines: {
+                                    color: '#eee'
+                                },
+                                pointLabels: {
+                                    font: {
+                                        size: 13,
+                                        family: "'Noto Sans SC', sans-serif"
+                                    }
+                                }
+                            }
+                        },
+                        plugins: {
+                            legend: {
+                                position: 'bottom',
+                                labels: {
+                                    font: {
+                                        family: "'Noto Sans SC', sans-serif"
+                                    }
+                                }
+                            },
+                            tooltip: {
+                                callbacks: {
+                                    title: chartTooltipTitleCallback
+                                }
+                            }
+                        }
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>
