@@ -1,0 +1,23 @@
+services:
+  site_build:
+    image: alex2young-github-io_dev
+    environment:
+      - JEKYLL_ENV
+    ports:
+      - 4000:4000
+    container_name: alex2young-github-io_build
+    volumes:
+      - ..:/usr/src/app
+    command: bundle exec jekyll build
+  site_web:
+    image: nginx
+    ports:
+      - 80:80
+      - 443:443
+    container_name: alex2young-github-io_web
+    restart: unless-stopped
+    volumes:
+      - ../_site:/usr/share/nginx/html:ro
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf
+    depends_on:
+      - site_build

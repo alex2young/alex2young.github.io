@@ -1,0 +1,35 @@
+{
+  "name": "alex2young.github.io",
+  "version": "1.0.0",
+  "private": true,
+  "packageManager": "npm@11.12.1",
+  "author": "alex2young",
+  "license": "MIT",
+  "keywords": [
+    "jekyll",
+    "github-pages",
+    "blog"
+  ],
+  "homepage": "https://alex2young.github.io",
+  "description": "Personal Jekyll site for alex2young.github.io.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alex2young/alex2young.github.io.git"
+  },
+  "bugs": {
+    "url": "https://github.com/alex2young/alex2young.github.io/issues"
+  },
+  "scripts": {
+    "build": "cross-env JEKYLL_ENV=production BUNDLE_PATH=vendor/bundle BUNDLE_USER_HOME=.bundle BUNDLE_FORCE_RUBY_PLATFORM=true PATH=/opt/homebrew/opt/ruby/bin:$PATH bundle exec jekyll build",
+    "serve": "cross-env BUNDLE_PATH=vendor/bundle BUNDLE_USER_HOME=.bundle BUNDLE_FORCE_RUBY_PLATFORM=true PATH=/opt/homebrew/opt/ruby/bin:$PATH bundle exec jekyll serve -H 0.0.0.0",
+    "docker-dev:build-image": "docker compose -f ./docker/docker-compose.build-image.yml build",
+    "docker-dev:serve": "docker compose -f ./docker/docker-compose.default.yml up",
+    "docker-prod:build": "cross-env JEKYLL_ENV=production docker compose -f ./docker/docker-compose.prod.yml build",
+    "docker-prod:serve": "cross-env JEKYLL_ENV=production docker compose -f ./docker/docker-compose.prod.yml up",
+    "default": "cross-env BUNDLE_PATH=vendor/bundle BUNDLE_USER_HOME=.bundle BUNDLE_FORCE_RUBY_PLATFORM=true PATH=/opt/homebrew/opt/ruby/bin:$PATH bundle exec jekyll serve -H 0.0.0.0 -t"
+  },
+  "devDependencies": {
+    "chart.js": "^4.5.1",
+    "cross-env": "^10.1.0"
+  }
+}

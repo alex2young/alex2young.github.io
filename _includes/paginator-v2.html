@@ -1,0 +1,78 @@
+{% assign locale = include.locale | default: site.locale %}
+{% comment %}
+  Based on minimal-mistakes-jekyll 4.28.0. Local deltas: keep pagination
+  jumps anchored to the post list and render disabled controls as spans.
+{% endcomment %}
+{% assign previous_text = site.data.ui-text[locale].pagination_previous | default: "Previous" %}
+{% assign next_text = site.data.ui-text[locale].pagination_next | default: "Next" %}
+<nav class="pagination" aria-label="Pagination">
+  <ul>
+    {% comment %} Link for previous page {% endcomment %}
+    {% if paginator.previous_page %}
+      {% if paginator.previous_page == 1 %}
+        <li><a href="{{ paginator.first_page_path | relative_url }}#posts" aria-label="Previous page">{{ previous_text }}</a></li>
+      {% else %}
+        <li><a href="{{ paginator.previous_page_path | relative_url }}#posts" aria-label="Previous page">{{ previous_text }}</a></li>
+      {% endif %}
+    {% else %}
+      <li><span class="disabled" aria-disabled="true" aria-label="Previous page">{{ previous_text }}</span></li>
+    {% endif %}
+
+    {% comment %} Determine whether the first page and the last page are already included in trail {% endcomment %}
+    {% for trail in paginator.page_trail %}
+      {% if trail.num == paginator.first_page %}
+        {% assign has_first_page = true %}
+      {% elsif trail.num == paginator.last_page %}
+        {% assign has_last_page = true %}
+      {% endif %}
+    {% endfor %}
+
+    {% comment %} First page {% endcomment %}
+    {% unless has_first_page %}
+      {% if paginator.page == 1 %}
+        <li><span class="disabled current" aria-current="page">1</span></li>
+      {% else %}
+        <li><a href="{{ paginator.first_page_path | relative_url }}#posts">1</a></li>
+      {% endif %}
+    {% endunless %}
+
+    {% comment %} Ellipsis for truncated links {% endcomment %}
+    {% assign ellipsis_start = paginator.first_page | plus: 1 %}
+    {% if paginator.page_trail.first.num > ellipsis_start %}
+      <li><span class="disabled" aria-hidden="true">&hellip;</span></li>
+    {% endif %}
+
+    {% comment %} Main pagination trail {% endcomment %}
+    {% for trail in paginator.page_trail %}
+      {% assign trail_url = trail.path | remove: 'index.html' | relative_url %}
+      {% if paginator.page == trail.num %}
+        <li><span class="disabled current" aria-current="page">{{ trail.num }}</span></li>
+      {% else %}
+        <li><a href="{{ trail_url }}#posts">{{ trail.num }}</a></li>
+      {% endif %}
+    {% endfor %}
+
+    {% comment %} Ellipsis for truncated links {% endcomment %}
+    {% assign ellipsis_end = paginator.last_page | minus: 1 %}
+    {% if paginator.page_trail.last.num < ellipsis_end %}
+      <li><span class="disabled" aria-hidden="true">&hellip;</span></li>
+    {% endif %}
+
+    {% unless has_last_page %}
+      {% if paginator.page == paginator.total_pages %}
+        <li><span class="disabled current" aria-current="page">{{ paginator.page }}</span></li>
+      {% else %}
+        {% assign last_page_url = paginator.last_page_path | remove: 'index.html' | relative_url %}
+        <li><a href="{{ last_page_url }}#posts">{{ paginator.total_pages }}</a></li>
+      {% endif %}
+    {% endunless %}
+
+    {% comment %} Link next page {% endcomment %}
+    {% if paginator.next_page %}
+      {% assign next_page_url = paginator.next_page_path | remove: 'index.html' | relative_url %}
+      <li><a href="{{ next_page_url }}#posts" aria-label="Next page">{{ next_text }}</a></li>
+    {% else %}
+      <li><span class="disabled" aria-disabled="true" aria-label="Next page">{{ next_text }}</span></li>
+    {% endif %}
+  </ul>
+</nav>
