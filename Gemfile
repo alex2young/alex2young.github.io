@@ -1,10 +1,10 @@
 source "https://rubygems.org"
 
-gem "bigdecimal", "~> 3.3"
+gem "bigdecimal", "~> 4.1"
 gem "jekyll", "~> 4.4"
-gem "faraday-retry", "~> 2.3"
+gem "faraday-retry", "~> 2.4"
 gem "minimal-mistakes-jekyll", "~> 4.28"
-gem "jekyll-sass-converter", "~> 2.2"
+gem "jekyll-sass-converter", "~> 3.1"
 gem "jekyll-feed", "~> 0.17"
 gem "jekyll-include-cache", "~> 0.2"
 gem "jekyll-paginate-v2", "~> 3.0"

@@ -2,7 +2,7 @@
   "name": "alex2young.github.io",
   "version": "1.0.0",
   "private": true,
-  "packageManager": "npm@11.12.1",
+  "packageManager": "npm@12.0.2",
   "author": "alex2young",
   "license": "MIT",
   "keywords": [
