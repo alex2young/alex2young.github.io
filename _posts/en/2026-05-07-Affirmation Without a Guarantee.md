@@ -3,7 +3,10 @@ title: Affirmation Without a Guarantee
 locale: en
 ---
 
-What troubles me about dialectic is not simply its reliance on negation. It is the suspicion that neither its affirmation nor its negation is entirely free. Affirmation must be earned through what opposes it, while negation is already expected to contribute to a reconciliation. The yes seems unable to begin; the no seems unable to break off. “Insincerity” may be an unfair word for this, but it names a real question: how much can a philosophy committed to reconciliation allow itself to lose?<!--more-->
+> The wounds of the Spirit heal, and leave no scars behind.  
+> — G. W. F. Hegel, *Phenomenology of Spirit*<!--more-->
+
+What troubles me about dialectic is not simply its reliance on negation. It is the suspicion that neither its affirmation nor its negation is entirely free. Affirmation must be earned through what opposes it, while negation is already expected to contribute to a reconciliation. The yes seems unable to begin; the no seems unable to break off. “Insincerity” may be an unfair word for this, but it names a real question: how much can a philosophy committed to reconciliation allow itself to lose?
 
 Hegel deserves a stronger hearing than the familiar formula of thesis, antithesis, and synthesis permits. His *determinate negation* means that the failure of a position teaches us something specific. What fails is not dissolved into an indifferent nothing; the result retains the content of the experience through which it arose. A Hegelian reply would therefore challenge the supposed honesty of pure rupture: a negation that preserves nothing may also have understood nothing. Mediation is how thought learns from what defeats its initial certainty. ([marxists.org](https://www.marxists.org/reference/archive/hegel/works/ph/phintro.htm))
 
