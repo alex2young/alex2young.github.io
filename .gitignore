@@ -13,15 +13,11 @@
 /.playwright-cli/
 /output/
 
-node_modules/
-.npm-cache/
 .sass-cache/
 
 /.bundle/
 /vendor/bundle
 *.gem
-
-yarn.lock
 
 _site/
 .jekyll-metadata

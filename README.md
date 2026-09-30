@@ -19,32 +19,15 @@ Personal Jekyll site published at <https://alex2young.github.io>.
 
 ## Development
 
-Install the Ruby version in `.ruby-version` and Node version in `.node-version`,
-then install dependencies:
+Install the Ruby version in `.ruby-version` and use GNU Make:
 
 ```sh
-export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
-BUNDLE_PATH=vendor/bundle BUNDLE_USER_HOME=.bundle BUNDLE_FORCE_RUBY_PLATFORM=true bundle install
-npm install
+make install
+make serve
 ```
 
-Run locally:
-
-```sh
-npm run serve
-```
-
-Build for production:
-
-```sh
-npm run build
-```
-
-Run targeted checks:
-
-```sh
-npm audit
-```
+Build for production with `make build`. Local development and GitHub Actions
+use these same commands; Node.js and npm are not required.
 
 ## Notes
 
@@ -52,8 +35,7 @@ This site uses the `minimal-mistakes-jekyll` gem theme with a small editorial
 style layer split across `_sass/site/`. Keep local overrides narrow and note
 the upstream theme version in copied includes so theme updates remain
 straightforward. The local SEO include keeps titles, descriptions, canonical
-links, Open Graph metadata, publication dates, and the root schema; unused
-social-platform and verification integrations are omitted.
+links, Open Graph metadata, publication dates, and the root schema.
 
 GitHub Pages is deployed through Actions so the site can use third-party
 gem-packaged themes.
@@ -68,7 +50,8 @@ and introductory text. The language switch shows the current
 Put Chinese posts in `_posts/zh/` and English posts in `_posts/en/`. Posts
 default to `locale: zh-CN`; add `locale: en` to every English post. The folder
 organizes the source files, while `locale` controls language-specific behavior.
-Home pagination, archives, and previous/next links stay within that locale. Existing post URLs are preserved. Translations are ordinary,
+Home pagination, archives, and previous/next links stay within that locale.
+Existing post URLs are preserved. Translations are ordinary,
 independent posts with no pairing or automatic translation.
 
 ## Appearance

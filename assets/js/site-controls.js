@@ -13,9 +13,7 @@
   }
 
   const applyTheme = () => {
-    root.dataset.themeMode = choice;
-    if (choice === 'system') root.removeAttribute('data-theme');
-    else root.dataset.theme = choice;
+    root.dataset.theme = choice;
     const resolved = choice === 'system'
       ? (media.matches ? 'dark' : 'light') : choice;
     for (const mode of ['light', 'dark']) {

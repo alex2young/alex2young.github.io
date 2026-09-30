@@ -19,7 +19,8 @@ body {
   background: transparent;
 }
 
-.greedy-nav .site-title {
+.greedy-nav .site-title,
+.greedy-nav .site-title:visited {
   color: var(--site-ink);
   font-family: var(--font-ui);
   font-size: 0.92rem;
@@ -28,25 +29,18 @@ body {
   text-transform: uppercase;
 }
 
-.greedy-nav .site-title:visited {
-  color: var(--site-ink);
-}
-
 .greedy-nav a {
   letter-spacing: 0;
 }
 
-.greedy-nav .visible-links a {
+.greedy-nav .visible-links a,
+.greedy-nav .visible-links a:visited {
   color: var(--site-nav-ink);
   font-family: var(--font-ui);
   font-size: 0.82rem;
   font-weight: 500;
   letter-spacing: 0.08em;
   text-transform: none;
-}
-
-.greedy-nav .visible-links a:visited {
-  color: var(--site-nav-ink);
 }
 
 .greedy-nav .visible-links a:hover,
@@ -109,10 +103,7 @@ a:focus {
   color: var(--site-deep-fern);
 }
 
-.pagination li a.current,
-.pagination li a.current.disabled,
-.pagination li span.current,
-.pagination li span.current.disabled {
+.pagination li .current {
   color: var(--site-on-accent);
   background: var(--site-deep-fern);
 }
@@ -122,13 +113,10 @@ a:focus {
   cursor: default;
 }
 
-.pagination--pager {
-  color: var(--site-ink);
-  border-color: var(--site-line-strong);
-}
-
+.pagination--pager,
 .pagination--pager:visited {
   color: var(--site-ink);
+  border-color: var(--site-line-strong);
 }
 
 .pagination--pager:hover,

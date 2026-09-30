@@ -1,14 +1,10 @@
 {% comment %}
-  Based on minimal-mistakes-jekyll 4.28.1. Local delta: omit the localized
-  date label and format the timestamp in the page's language.
+  Based on minimal-mistakes-jekyll 4.28.1. Format the date in the page's language.
 {% endcomment %}
-{% if page.locale == 'en' %}
-  {% assign date_format = "%B %-d, %Y" %}
-{% else %}
-  {% assign date_format = "%Y年%-m月%-d日" %}
-{% endif %}
-{% if page.last_modified_at %}
-  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i></strong> <time class="dt-updated" datetime="{{ page.last_modified_at | date: "%Y-%m-%d" }}">{{ page.last_modified_at | date: date_format }}</time></p>
-{% elsif page.date %}
-  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i></strong> <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: date_format }}</time></p>
+{% assign date = page.last_modified_at | default: page.date %}
+{% if date %}
+  {% assign date_format = site.data.languages[page.locale].date_format %}
+  {% assign date_class = 'dt-published' %}
+  {% if page.last_modified_at %}{% assign date_class = 'dt-updated' %}{% endif %}
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i></strong> <time class="{{ date_class }}" datetime="{{ date | date_to_xmlschema }}">{{ date | date: date_format }}</time></p>
 {% endif %}

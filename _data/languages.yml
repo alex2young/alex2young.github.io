@@ -5,9 +5,9 @@ zh-CN:
   brand: 震之
   home: /zh/
   description: 知其黑守其白
-  intro: 知其黑守其白
   switch_to: en
   kicker: 以明
+  date_format: "%Y年%-m月%-d日"
 en:
   label: EN
   language_name: English
@@ -18,3 +18,4 @@ en:
   intro: Wo Es was, soll <strong>Ich</strong> werden
   switch_to: zh-CN
   kicker: amor fati
+  date_format: "%B %-d, %Y"

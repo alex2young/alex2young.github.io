@@ -2,20 +2,12 @@ theme: minimal-mistakes-jekyll
 minimal_mistakes_skin: contrast
 
 url: https://alex2young.github.io
-baseurl:
 title: 震之
 description: >
   知其黑守其白
 locale: zh-CN
 lang: zh-CN
-timezone:
-
-author:
-  name:
-  avatar:
-  bio: 知其黑守其白
-  location:
-  links: []
+author: alex2young
 
 repository: alex2young/alex2young.github.io
 excerpt_separator: <!--more-->
@@ -35,7 +27,6 @@ pagination:
 markdown: kramdown
 highlighter: rouge
 search: false
-teaser:
 breadcrumbs: false
 words_per_minute: 200
 future: true
@@ -43,7 +34,6 @@ atom_feed:
   hide: true
 
 exclude:
-  - /.npm-cache
   - /.playwright-cli
   - AGENTS.md
   - Gemfile
@@ -51,9 +41,7 @@ exclude:
   - LICENSE
   - README.md
   - assets/fonts/README.md
-  - package-lock.json
-  - package.json
-  - /node_modules
+  - Makefile
   - /output
   - /vendor
 

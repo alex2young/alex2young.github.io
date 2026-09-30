@@ -22,17 +22,14 @@
   font-weight: 500;
 }
 
-.archive__item-title a {
+.archive__item-title a,
+.archive__item-title a:visited {
   color: var(--site-fern);
   text-decoration-color: var(--site-link-line);
 }
 
 .layout--home .archive__item-title a {
   text-decoration: none;
-}
-
-.archive__item-title a:visited {
-  color: var(--site-fern);
 }
 
 .archive__item-title a:hover,
@@ -43,7 +40,6 @@
 
 .layout--home .archive__item-title a:hover,
 .layout--home .archive__item-title a:focus {
-  color: var(--site-deep-fern);
   text-decoration: none;
 }
 
@@ -89,16 +85,13 @@
   font-size: 0.72rem;
 }
 
-.archive-year__item a {
+.archive-year__item a,
+.archive-year__item a:visited {
   color: var(--site-ink);
   font-family: var(--font-serif);
   font-size: 0.94rem;
   line-height: 1.55;
   text-decoration-color: transparent;
-}
-
-.archive-year__item a:visited {
-  color: var(--site-ink);
 }
 
 .archive-year__item a:hover,

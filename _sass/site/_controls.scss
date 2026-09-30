@@ -63,13 +63,13 @@
   display: none;
 }
 
-:root[data-theme-mode="light"] .theme-icon--system,
-:root[data-theme-mode="dark"] .theme-icon--system {
+:root[data-theme="light"] .theme-icon--system,
+:root[data-theme="dark"] .theme-icon--system {
   display: none;
 }
 
-:root[data-theme-mode="light"] .theme-icon--light,
-:root[data-theme-mode="dark"] .theme-icon--dark {
+:root[data-theme="light"] .theme-icon--light,
+:root[data-theme="dark"] .theme-icon--dark {
   display: block;
 }
 

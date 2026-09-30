@@ -15,12 +15,10 @@
 
 ## Commands
 
-- `export PATH="/opt/homebrew/opt/ruby/bin:$PATH"`: use the Ruby version in `.ruby-version`.
-- `BUNDLE_PATH=vendor/bundle BUNDLE_USER_HOME=.bundle BUNDLE_FORCE_RUBY_PLATFORM=true bundle install`: install Ruby dependencies locally.
-- `npm install`: install Node tooling.
-- `npm run serve`: run the local Jekyll site.
-- `npm run build`: build the production site.
-- `npm audit`: check Node tooling dependencies.
+- Use the Ruby version in `.ruby-version`.
+- `make install`: install Ruby dependencies locally.
+- `make serve`: run the local Jekyll site.
+- `make build`: build the production site.
 
 ## Style
 
@@ -34,9 +32,9 @@ into this repository. Keep custom styling in `_sass/_site.scss`.
 There is no broad unit-test suite. Before submitting changes, run the checks
 that match your edit:
 
-- Content/config: `npm run build`.
-- Dependency changes: `npm audit`.
-- Visual or route changes: `npm run serve`, then inspect affected pages.
+- Content/config: `make build`.
+- Dependency changes: `make install`, then `make build`.
+- Visual or route changes: `make serve`, then inspect affected pages.
 
 ## Commits & PRs
 

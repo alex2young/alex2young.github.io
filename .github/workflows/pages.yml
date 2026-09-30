@@ -29,27 +29,11 @@ jobs:
         with:
           ruby-version: .ruby-version
 
-      - name: Install Ruby dependencies
-        run: bundle install
-        env:
-          BUNDLE_PATH: vendor/bundle
-          BUNDLE_USER_HOME: .bundle
-          BUNDLE_FORCE_RUBY_PLATFORM: "true"
-
-      - name: Set up Node
-        uses: actions/setup-node@v7
-        with:
-          node-version-file: .node-version
-          cache: npm
-
-      - name: Install Node dependencies
-        run: npm ci
+      - name: Install dependencies
+        run: make install
 
       - name: Build site
-        run: npm run build
-
-      - name: Audit Node dependencies
-        run: npm audit
+        run: make build
 
       - name: Upload Pages artifact
         if: github.event_name != 'pull_request'

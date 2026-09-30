@@ -9,7 +9,7 @@
       {% endif %}
     </h1>
     <p class="site-intro__dek">
-      {{ language.intro }}
+      {{ language.intro | default: language.description }}
     </p>
   </div>
   <p class="site-intro__seal" aria-hidden="true">
