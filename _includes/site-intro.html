@@ -9,11 +9,7 @@
       {% endif %}
     </h1>
     <p class="site-intro__dek">
-      {% if page.locale == 'en' %}
-        Wo Es was, soll <strong>Ich</strong> werden
-      {% else %}
-        {{ language.description }}
-      {% endif %}
+      {{ language.intro }}
     </p>
   </div>
   <p class="site-intro__seal" aria-hidden="true">

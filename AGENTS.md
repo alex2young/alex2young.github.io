@@ -2,15 +2,16 @@
 
 ## Project Structure
 
-- Root pages: `index.html`, `about.md`, `archive.html`, `404.html`.
-- Posts: `_posts/YYYY-MM-DD-title.md`.
+- Root pages: `index.html`, `archive.html`, `404.html`.
+- Posts: `_posts/zh/YYYY-MM-DD-title.md` and `_posts/en/YYYY-MM-DD-title.md`.
+  English posts explicitly set `locale: en`; Chinese posts use the default.
 - Theme: `minimal-mistakes-jekyll` gem; avoid local theme overrides unless needed.
-- Data: `_data/navigation.yml`.
+- Language pages: `zh/index.html`, `en/index.html`, `en/archive.html`.
+- Data: `_data/languages.yml`, `_data/navigation.yml`, `_data/ui-text.yml`.
 - Includes: `_includes/footer.html` keeps the footer minimal.
 - Styles: `_sass/_site.scss` and `assets/css/main.scss` contain the local visual layer.
 - Assets: `assets/` for favicons, images, and standalone static files.
 - GitHub Pages workflow: `.github/workflows/pages.yml`.
-- Docker configs: `docker/`.
 
 ## Commands
 
@@ -20,7 +21,6 @@
 - `npm run serve`: run the local Jekyll site.
 - `npm run build`: build the production site.
 - `npm audit`: check Node tooling dependencies.
-- `npm run docker-dev:serve`: start the Docker Compose dev setup.
 
 ## Style
 

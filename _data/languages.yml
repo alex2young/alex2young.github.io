@@ -5,6 +5,8 @@ zh-CN:
   brand: 震之
   home: /zh/
   description: 知其黑守其白
+  intro: 知其黑守其白
+  switch_to: en
   kicker: 以明
 en:
   label: EN
@@ -13,4 +15,6 @@ en:
   brand: Übersicht
   home: /en/
   description: Wo Es was, soll Ich werden
+  intro: Wo Es was, soll <strong>Ich</strong> werden
+  switch_to: zh-CN
   kicker: amor fati

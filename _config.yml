@@ -43,19 +43,18 @@ atom_feed:
   hide: true
 
 exclude:
+  - /.npm-cache
+  - /.playwright-cli
   - AGENTS.md
-  - Dockerfile.dev
   - Gemfile
   - Gemfile.lock
   - LICENSE
   - README.md
-  - gulpfile.js
+  - assets/fonts/README.md
   - package-lock.json
   - package.json
-  - /docker
   - /node_modules
   - /output
-  - /screenshots
   - /vendor
 
 defaults:

@@ -1,37 +1,23 @@
 {% assign controls_locale = include.locale | default: page.locale | default: site.locale %}
 {% assign current_language = site.data.languages[controls_locale] %}
-{% if controls_locale == 'zh-CN' %}
-  {% assign other_language = site.data.languages.en %}
-  {% assign other_locale = 'en' %}
-  {% assign current_label = '当前' %}
-  {% assign next_label = '切换为' %}
-  {% assign light_label = '亮色' %}
-  {% assign dark_label = '暗色' %}
-  {% assign system_label = '跟随系统' %}
-{% else %}
-  {% assign other_language = site.data.languages['zh-CN'] %}
-  {% assign other_locale = 'zh-CN' %}
-  {% assign current_label = 'Current' %}
-  {% assign next_label = 'Switch to' %}
-  {% assign light_label = 'Light' %}
-  {% assign dark_label = 'Dark' %}
-  {% assign system_label = 'System' %}
-{% endif %}
+{% assign other_locale = current_language.switch_to %}
+{% assign other_language = site.data.languages[other_locale] %}
+{% assign labels = site.data.ui-text[controls_locale] %}
 <div class="site-controls">
   {% unless page.layout == 'language-selector' %}
     <a class="site-control site-control--language"
       href="{{ other_language.home | relative_url }}"
       hreflang="{{ other_locale }}"
-      aria-label="{{ current_label }}: {{ current_language.language_name }}; {{ next_label }} {{ other_language.language_name }}"
-      title="{{ next_label }} {{ other_language.language_name }}">
+      aria-label="{{ labels.current_label }}: {{ current_language.language_name }}; {{ labels.switch_to_label }} {{ other_language.language_name }}"
+      title="{{ labels.switch_to_label }} {{ other_language.language_name }}">
       {{ current_language.label }}
     </a>
   {% endunless %}
   <button class="site-control site-control--theme" type="button"
-    data-theme-switch data-current-label="{{ current_label }}"
-    data-next-label="{{ next_label }}" data-label-light="{{ light_label }}"
-    data-label-dark="{{ dark_label }}" data-label-system="{{ system_label }}"
-    aria-label="{{ current_label }}: {{ system_label }}; {{ next_label }} {{ light_label }}">
+    data-theme-switch data-current-label="{{ labels.current_label }}"
+    data-next-label="{{ labels.switch_to_label }}" data-label-light="{{ labels.theme_light }}"
+    data-label-dark="{{ labels.theme_dark }}" data-label-system="{{ labels.theme_system }}"
+    aria-label="{{ labels.current_label }}: {{ labels.theme_system }}; {{ labels.switch_to_label }} {{ labels.theme_light }}">
     <svg class="theme-icon--light" viewBox="0 0 24 24" aria-hidden="true">
       <circle cx="12" cy="12" r="4" />
       <path d="M12 2v2M12 20v2M2 12h2M20 12h2M5 5l1.5 1.5M17.5 17.5L19 19M5 19l1.5-1.5M17.5 6.5L19 5" />
