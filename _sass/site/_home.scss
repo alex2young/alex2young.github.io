@@ -78,7 +78,7 @@
   min-height: 6.08rem;
   margin: 0 0 0.65rem;
   border-radius: 50%;
-  color: var(--site-paper-soft);
+  color: var(--site-seal-ink);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -199,4 +199,40 @@
     margin: -1.35rem 0 0;
     font-size: 1.18rem;
   }
+}
+
+@font-face {
+  font-family: "Blog Motto";
+  src: url("../fonts/blog-motto.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Blog Kicker";
+  src: url("../fonts/blog-kicker.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+html[lang="zh-CN"] .site-intro__kicker {
+  font-family: "Blog Kicker", "Kaiti SC", serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  letter-spacing: 0.16em;
+  text-shadow: none;
+  transform: none;
+}
+
+html[lang="zh-CN"] .site-intro__dek {
+  font-family: "Blog Motto", "Kaiti SC", "STKaiti", "KaiTi", serif;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+}
+
+html[lang="en"] .site-intro h1 {
+  max-width: none;
+  font-size: clamp(2.5rem, 8vw, 5.2rem);
 }

@@ -1,28 +1,16 @@
 ---
-layout: home
-classes: wide
-pagination:
-  enabled: true
-  permalink: /p/:num/
+layout: language-selector
+title: EN / 中
+brand: EN / 中
+description: English / 中文
+locale: en
 ---
 
-<section class="site-intro" aria-labelledby="site-intro-title">
-  <div class="site-intro__body">
-    <p class="site-intro__kicker">amor fati</p>
-    <h1 id="site-intro-title">
-      <span>震之</span>
-      <span class="site-intro__hexagram" aria-hidden="true">䷲</span>
-    </h1>
-    <p class="site-intro__dek">
-      Wo Es was, soll <strong>Ich</strong> werden
-    </p>
-  </div>
-  <p class="site-intro__seal" aria-label="बोधिसत्त्व" aria-hidden="true">
-    <span>बो</span>
-    <span>धि</span>
-    <span>स</span>
-    <span>त्त्व</span>
-  </p>
-</section>
-
-<div id="posts" class="post-list-anchor" aria-hidden="true"></div>
+<nav class="language-selector" aria-label="English / 中文">
+  <a class="language-selector__choice language-selector__choice--en"
+    href="{{ '/en/' | relative_url }}" lang="en" hreflang="en"
+    aria-label="English">EN</a>
+  <a class="language-selector__choice language-selector__choice--zh"
+    href="{{ '/zh/' | relative_url }}" lang="zh-CN" hreflang="zh-CN"
+    aria-label="中文">中</a>
+</nav>

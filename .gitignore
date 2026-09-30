@@ -11,6 +11,7 @@
 
 /.vscode/
 /.playwright-cli/
+/output/
 
 node_modules/
 .npm-cache/

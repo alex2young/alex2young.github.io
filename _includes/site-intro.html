@@ -1,0 +1,27 @@
+{% assign language = site.data.languages[page.locale] %}
+<section class="site-intro" aria-labelledby="site-intro-title">
+  <div class="site-intro__body">
+    <p class="site-intro__kicker">{{ language.kicker }}</p>
+    <h1 id="site-intro-title">
+      <span>{{ language.brand }}</span>
+      {% if page.locale == 'zh-CN' %}
+        <span class="site-intro__hexagram" aria-hidden="true">䷲</span>
+      {% endif %}
+    </h1>
+    <p class="site-intro__dek">
+      {% if page.locale == 'en' %}
+        Wo Es was, soll <strong>Ich</strong> werden
+      {% else %}
+        {{ language.description }}
+      {% endif %}
+    </p>
+  </div>
+  <p class="site-intro__seal" aria-hidden="true">
+    <span>बो</span>
+    <span>धि</span>
+    <span>स</span>
+    <span>त्त्व</span>
+  </p>
+</section>
+
+<div id="posts" class="post-list-anchor" aria-hidden="true"></div>

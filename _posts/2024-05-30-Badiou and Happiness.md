@@ -1,5 +1,6 @@
 ---
 title: Badiou and Happiness
+locale: en
 ---
 
 > Affirmative experience of an interruption of finitude<!--more-->

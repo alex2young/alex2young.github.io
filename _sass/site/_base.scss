@@ -4,13 +4,13 @@ html {
 
 body {
   background:
-    linear-gradient(180deg, rgba(199, 173, 124, 0.12), rgba(245, 241, 232, 0) 22rem),
+    linear-gradient(180deg, var(--site-wash), transparent 22rem),
     var(--site-paper);
   color: var(--site-ink);
 }
 
 .masthead {
-  background: rgba(245, 241, 232, 0.9);
+  background: var(--site-masthead);
   border-bottom: 1px solid var(--site-line);
   backdrop-filter: blur(16px);
 }
@@ -19,7 +19,7 @@ body {
   background: transparent;
 }
 
-.site-title {
+.greedy-nav .site-title {
   color: var(--site-ink);
   font-family: var(--font-ui);
   font-size: 0.92rem;
@@ -28,7 +28,7 @@ body {
   text-transform: uppercase;
 }
 
-.site-title:visited {
+.greedy-nav .site-title:visited {
   color: var(--site-ink);
 }
 
@@ -37,7 +37,7 @@ body {
 }
 
 .greedy-nav .visible-links a {
-  color: rgba(32, 32, 28, 0.72);
+  color: var(--site-nav-ink);
   font-family: var(--font-ui);
   font-size: 0.82rem;
   font-weight: 500;
@@ -46,7 +46,7 @@ body {
 }
 
 .greedy-nav .visible-links a:visited {
-  color: rgba(32, 32, 28, 0.72);
+  color: var(--site-nav-ink);
 }
 
 .greedy-nav .visible-links a:hover,
@@ -56,7 +56,7 @@ body {
 
 a {
   color: var(--site-fern);
-  text-decoration-color: rgba(88, 101, 74, 0.26);
+  text-decoration-color: var(--site-link-line);
   text-decoration-thickness: 0.07em;
   text-underline-offset: 0.18em;
 }
@@ -68,7 +68,7 @@ a:visited {
 a:hover,
 a:focus {
   color: var(--site-deep-fern);
-  text-decoration-color: rgba(68, 81, 58, 0.44);
+  text-decoration-color: var(--site-link-hover-line);
 }
 
 .pagination li a,
@@ -113,12 +113,12 @@ a:focus {
 .pagination li a.current.disabled,
 .pagination li span.current,
 .pagination li span.current.disabled {
-  color: var(--site-paper-soft);
+  color: var(--site-on-accent);
   background: var(--site-deep-fern);
 }
 
 .pagination li span.disabled:not(.current) {
-  color: rgba(32, 32, 28, 0.42);
+  color: var(--site-disabled);
   cursor: default;
 }
 
@@ -133,7 +133,7 @@ a:focus {
 
 .pagination--pager:hover,
 .pagination--pager:focus {
-  color: var(--site-paper-soft);
+  color: var(--site-on-accent);
   background: var(--site-deep-fern);
 }
 
@@ -163,8 +163,8 @@ a:focus {
   margin-block: 2.2rem;
   margin-inline: 0;
   padding: 1.15rem 1.35rem 1.2rem;
-  border-inline-start: 2px solid rgba(88, 101, 74, 0.34);
-  background: rgba(251, 248, 240, 0.5);
+  border-inline-start: 2px solid var(--site-link-line);
+  background: var(--site-surface);
   color: var(--site-deep-fern);
   font-family: var(--font-serif);
   font-size: 1.03rem;
@@ -174,4 +174,71 @@ a:focus {
 
 .page__content blockquote p:last-child {
   margin-bottom: 0;
+}
+.page__title a,
+.page__title a:visited {
+  color: var(--site-ink);
+}
+
+.page__meta,
+figcaption {
+  color: var(--site-muted);
+}
+
+.page__content h2,
+hr {
+  border-color: var(--site-line);
+}
+
+.page__content :not(pre) > code {
+  color: var(--site-ink);
+  background: var(--site-surface);
+}
+
+.page__content thead {
+  background: var(--site-surface);
+  border-color: var(--site-line-strong);
+}
+
+.page__content td {
+  border-color: var(--site-line);
+}
+
+.greedy-nav .hidden-links {
+  background: var(--site-paper-soft);
+  border-color: var(--site-line);
+}
+
+.greedy-nav .hidden-links a {
+  color: var(--site-ink);
+}
+
+.greedy-nav .hidden-links a:hover {
+  background: var(--site-surface);
+}
+
+.greedy-nav .hidden-links::before {
+  border-color: var(--site-line) transparent;
+}
+
+.greedy-nav .hidden-links::after {
+  border-color: var(--site-paper-soft) transparent;
+}
+
+.navicon,
+.navicon::before,
+.navicon::after {
+  background: var(--site-ink);
+}
+
+.greedy-nav__toggle.close .navicon {
+  background: transparent;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #main,
+  .masthead,
+  .page__footer {
+    animation: none;
+  }
 }

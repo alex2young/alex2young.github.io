@@ -1,0 +1,16 @@
+zh-CN:
+  label: 中
+  language_name: 中文
+  og_locale: zh_CN
+  brand: 震之
+  home: /zh/
+  description: 知其黑守其白
+  kicker: 以明
+en:
+  label: EN
+  language_name: English
+  og_locale: en_US
+  brand: Übersicht
+  home: /en/
+  description: Wo Es was, soll Ich werden
+  kicker: amor fati

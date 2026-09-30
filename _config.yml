@@ -3,9 +3,9 @@ minimal_mistakes_skin: contrast
 
 url: https://alex2young.github.io
 baseurl:
-title: Übersicht
+title: 震之
 description: >
-  Wo Es was, soll Ich werden
+  知其黑守其白
 locale: zh-CN
 lang: zh-CN
 timezone:
@@ -13,7 +13,7 @@ timezone:
 author:
   name:
   avatar:
-  bio: Wo Es was, soll Ich werden
+  bio: 知其黑守其白
   location:
   links: []
 
@@ -54,6 +54,7 @@ exclude:
   - package.json
   - /docker
   - /node_modules
+  - /output
   - /screenshots
   - /vendor
 
@@ -62,6 +63,7 @@ defaults:
       path: ""
       type: posts
     values:
+      locale: zh-CN
       layout: single
       classes: moderate
       author_profile: false

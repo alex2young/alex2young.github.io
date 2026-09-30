@@ -1,3 +1,6 @@
-main:
-  - title: Archiv
+zh-CN:
+  - title: 归档
     url: /archive.html
+en:
+  - title: Archive
+    url: /en/archive.html
