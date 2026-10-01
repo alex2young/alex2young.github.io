@@ -15,17 +15,13 @@
 .site-intro__kicker {
   color: var(--site-zhen);
   display: inline-block;
-  font-family: var(--font-display);
-  font-size: 0.82rem;
+  font-family: "Blog Latin Kicker", cursive;
+  font-size: 1.4rem;
   font-style: normal;
-  font-weight: 900;
-  letter-spacing: 0.2em;
-  text-shadow:
-    0.055em 0 0 rgba(23, 61, 51, 0.34),
-    -0.035em 0 0 rgba(166, 42, 30, 0.2);
+  font-weight: 400;
+  font-synthesis: none;
+  letter-spacing: 0;
   text-transform: lowercase;
-  transform: skewX(-11deg) scaleX(1.18);
-  transform-origin: left center;
 }
 
 .site-intro h1 {
@@ -43,37 +39,22 @@
 }
 
 .site-intro__hexagram {
-  margin-top: 0.36em;
+  flex: none;
+  width: 0.25em;
+  height: auto;
+  margin-top: 0.28em;
   color: var(--site-zhen);
-  font-family: var(--font-serif);
-  font-size: 0.30em;
-  font-weight: 500;
-  line-height: 1;
   opacity: 0.88;
-  transform: rotate(1.5deg);
 }
 
 .site-intro__dek {
   max-width: 31rem;
   color: var(--site-muted);
-  font-family: var(--font-serif);
+  font-family: "Blog Latin Motto", serif;
   font-size: 1.16rem;
+  font-weight: 400;
+  font-synthesis: none;
   line-height: 1.78;
-}
-
-.site-intro__browse {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.65rem;
-  margin-top: 1rem;
-  padding-block: 0.5rem;
-  font-family: var(--font-ui);
-  font-size: 0.78rem;
-}
-
-.site-intro__browse:focus-visible {
-  outline: 2px solid var(--site-zhen);
-  outline-offset: 0.3rem;
 }
 
 .site-intro__dek strong {
@@ -94,11 +75,12 @@
   justify-content: center;
   align-items: center;
   gap: 0.03rem;
-  font-family: var(--font-sanskrit);
+  font-family: "Blog Seal", serif;
   font-feature-settings: "kern" 1, "liga" 1, "clig" 1;
   font-size: 1.28rem;
-  font-weight: 600;
-  letter-spacing: -0.025em;
+  font-weight: 400;
+  font-synthesis: none;
+  letter-spacing: 0;
   line-height: 0.98;
   isolation: isolate;
   transform: rotate(-1.8deg);
@@ -207,38 +189,21 @@
   }
 }
 
-@font-face {
-  font-family: "Blog Motto";
-  src: url("../fonts/blog-motto.woff2") format("woff2");
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Blog Kicker";
-  src: url("../fonts/blog-kicker.woff2") format("woff2");
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-}
-
 html[lang="zh-CN"] .site-intro__kicker {
-  font-family: "Blog Kicker", "Kaiti SC", serif;
-  font-size: 1.2rem;
-  font-weight: 400;
-  letter-spacing: 0.16em;
-  text-shadow: none;
-  transform: none;
+  font-family: "Blog Kicker", serif;
+  letter-spacing: 0.1em;
 }
 
 html[lang="zh-CN"] .site-intro__dek {
-  font-family: "Blog Motto", "Kaiti SC", "STKaiti", "KaiTi", serif;
-  font-weight: 400;
+  font-family: "Blog Motto", serif;
   letter-spacing: 0.1em;
 }
 
 html[lang="en"] .site-intro h1 {
   max-width: none;
   font-size: clamp(2.5rem, 8vw, 5.2rem);
+}
+
+html[lang="en"] .site-intro__dek {
+  font-size: clamp(1rem, 2.5vw, 1.04rem);
 }

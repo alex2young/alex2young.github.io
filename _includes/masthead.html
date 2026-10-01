@@ -10,7 +10,8 @@
     <div class="masthead__menu">
       <nav id="site-nav" class="site-nav"
         aria-label="{{ site.data.ui-text[locale].primary_navigation }}">
-        <a class="site-title" href="{{ language.home | relative_url }}">
+        <a class="site-title site-brand"
+          href="{{ language.home | relative_url }}">
           {{ language.brand | escape_once | strip }}
         </a>
         <ul class="visible-links">

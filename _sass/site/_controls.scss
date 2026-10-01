@@ -23,7 +23,8 @@
   }
 
   .site-nav .visible-links a {
-    margin-inline: 0.35rem;
+    margin-inline: 0.25rem;
+    letter-spacing: 0.03em;
   }
 
   .masthead__menu .site-controls {
@@ -63,7 +64,6 @@
   border-radius: 50%;
   background: transparent;
   color: var(--site-nav-ink);
-  font-family: var(--font-ui);
   font-size: 0.82rem;
   font-weight: 500;
   line-height: 1;
@@ -116,7 +116,7 @@
 
 .search-content .search-input {
   color: var(--site-ink);
-  font-family: var(--font-ui);
+  font-family: inherit;
   font-size: clamp(1.15rem, 3vw, 1.75rem);
 }
 

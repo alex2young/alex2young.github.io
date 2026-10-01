@@ -23,7 +23,6 @@ zh-CN:
   toc_label: "目录"
   ext_link_label: "直接链接"
   recent_posts: "尔来"
-  browse_posts: "阅读文章"
   back_to_top: "返回顶部"
 en:
   search_label: "Search posts"
@@ -32,7 +31,6 @@ en:
   search_loading: "Searching…"
   search_error: "Search could not load. Please try again."
   search_count: "posts found"
-  browse_posts: "Read posts"
   primary_navigation: "Primary navigation"
   pagination_label: "Pagination"
   pagination_previous_page: "Previous page"

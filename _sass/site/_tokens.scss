@@ -24,12 +24,10 @@
   --site-circle-edge: rgba(255, 255, 255, 0.85);
   --site-link-line: rgba(88, 101, 74, 0.26);
   --site-link-hover-line: rgba(68, 81, 58, 0.44);
-  --font-ui: "Avenir Next Condensed", "Helvetica Neue", Arial, sans-serif;
-  --font-display: "DIN Condensed", var(--font-ui);
+  --font-ui: -apple-system, system-ui, Roboto, "Segoe UI",
+    "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
   --font-serif: "Iowan Old Style", Georgia, "Songti SC",
     "Noto Serif CJK SC", serif;
-  --font-sanskrit: "Tiro Devanagari Sanskrit", "Siddhanta",
-    "Noto Serif Devanagari", "Devanagari Sangam MN", serif;
 }
 
 // One night palette for both the system preference and explicit selection.
