@@ -29,4 +29,4 @@ But blanker still than these writings whose meaning is lost may be the hundreds 
 
 And yet I am never quite reconciled to it. Not to those great stretches of blank paper, not to joy and sorrow left indistinct, least of all to a life reduced to mere survival. A diary may not be able to bear all the hopes I place in it, but it is still my innermost refuge. One day I wrote:
 
-> You ask why I have taken to keeping a diary lately. To leave a record, something my future self might smile over. No need to dwell on today’s red-rimmed eyes, or on the clouds that have drifted away. Only to write a little more, as best I can. Will you understand?
+> You ask why I have taken to keeping a diary lately. To leave a record, something my future self might smile over. Never mind the faint redness around my eyes today, nor on the clouds that have drifted away. Only to write a little more, as best I can. Will you understand?
