@@ -15,4 +15,4 @@ permalink: /zh/about/
 
 可以从[最近的文章]({{ '/zh/#posts' | relative_url }})读起，
 也可以在[归档]({{ '/archive.html' | relative_url }})里往前翻。
-[近况]({{ '/zh/now/' | relative_url }})记录最近在读、在做的事。
+[阅读]({{ '/zh/now/' | relative_url }})按年份记录读过的书。

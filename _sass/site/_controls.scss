@@ -3,9 +3,37 @@
   align-items: center;
 }
 
-.masthead__menu .greedy-nav {
+.site-nav {
+  // Reuse theme styles without opting into its collapsing navigation script.
+  @extend .greedy-nav;
+
   flex: 1;
   min-width: 0;
+  flex-wrap: wrap;
+}
+
+.site-nav .visible-links {
+  min-width: max-content;
+  overflow: visible;
+}
+
+@media (max-width: 767px) {
+  .site-nav .site-title {
+    margin-inline-end: 0.5rem;
+  }
+
+  .site-nav .visible-links a {
+    margin-inline: 0.35rem;
+  }
+
+  .masthead__menu .site-controls {
+    gap: 0;
+    margin-inline-start: 0.25rem;
+  }
+
+  .masthead__menu .site-control {
+    width: 2rem;
+  }
 }
 
 .site-controls {

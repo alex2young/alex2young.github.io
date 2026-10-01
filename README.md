@@ -54,9 +54,12 @@ Home pagination, archives, and previous/next links stay within that locale.
 Existing post URLs are preserved. Translations are ordinary,
 independent posts with no pairing or automatic translation.
 
-The About and Now pages live in `zh/about.md`, `zh/now.md`, `en/about.md`,
-and `en/now.md`. Edit the Now pages as ordinary Markdown lists under Reading
-and Doing, and update their visible date when changing the entries.
+The About and Reading pages live in `zh/about.md`, `zh/now.md`, `en/about.md`,
+and `en/now.md`. Reading lists use yearly Markdown sections; update their
+visible date when changing entries. Keep years, entries, and ordering aligned
+between the Chinese and English lists. Use established English titles where
+available and retain Chinese titles for Chinese works.
+The existing `/zh/now/` and `/en/now/` URLs remain stable.
 
 Search uses the theme's search panel with local substring matching for Chinese
 and English. `assets/search.json` indexes post titles and full content at build

@@ -17,4 +17,4 @@ at different points in life.
 
 Start with the [recent posts]({{ '/en/#posts' | relative_url }}),
 or browse the [archive]({{ '/en/archive.html' | relative_url }}).
-[Now]({{ '/en/now/' | relative_url }}) collects current reading and activities.
+[Reading]({{ '/en/now/' | relative_url }}) collects reading by year.

@@ -192,37 +192,6 @@ hr {
   border-color: var(--site-line);
 }
 
-.greedy-nav .hidden-links {
-  background: var(--site-paper-soft);
-  border-color: var(--site-line);
-}
-
-.greedy-nav .hidden-links a {
-  color: var(--site-ink);
-}
-
-.greedy-nav .hidden-links a:hover {
-  background: var(--site-surface);
-}
-
-.greedy-nav .hidden-links::before {
-  border-color: var(--site-line) transparent;
-}
-
-.greedy-nav .hidden-links::after {
-  border-color: var(--site-paper-soft) transparent;
-}
-
-.navicon,
-.navicon::before,
-.navicon::after {
-  background: var(--site-ink);
-}
-
-.greedy-nav__toggle.close .navicon {
-  background: transparent;
-}
-
 @media (prefers-reduced-motion: reduce) {
   #main,
   .masthead,
