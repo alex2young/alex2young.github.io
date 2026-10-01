@@ -60,6 +60,12 @@ blockquote solely for the summary. Empty posts use `excerpt: ""`.
 Prefer excerpts without full stops; omit terminal periods and use commas or
 semicolons between clauses where appropriate.
 
+Use plain text or Unicode for simple mathematical symbols. Posts that need
+mathematical typesetting set `mathjax: true` in front matter; only those pages
+load MathJax from jsDelivr. Write math as `$$...$$`: Kramdown distinguishes
+inline math within a paragraph from display math on its own line. The MathJax
+configuration includes the `cancel` extension for barred-subject notation.
+
 The About and Reading pages live in `zh/about.md`, `zh/now.md`, `en/about.md`,
 and `en/now.md`. Reading lists use yearly Markdown sections; update their
 visible date when changing entries. The Chinese list keeps the full record.

@@ -1,14 +1,14 @@
 ---
 title: Hello darkness my old friend
 excerpt: >-
-  偶尔会幻想突然就插上了 $$S^2$$ 机关
+  偶尔会幻想突然就插上了 S² 机关
 ---
 
 ### Red Pill
 
 Bold move.
 
-偶尔会幻想突然就插上了 $$S^2$$ 机关。于是也就能配得上吞下 Red Pill 的勇气了。
+偶尔会幻想突然就插上了 S² 机关。于是也就能配得上吞下 Red Pill 的勇气了。
 
 夜深人静时，可会后悔不爱蓝？
 
