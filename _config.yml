@@ -26,7 +26,8 @@ pagination:
 
 markdown: kramdown
 highlighter: rouge
-search: false
+search: true
+search_provider: local
 breadcrumbs: false
 words_per_minute: 200
 future: true

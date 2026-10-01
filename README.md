@@ -54,6 +54,15 @@ Home pagination, archives, and previous/next links stay within that locale.
 Existing post URLs are preserved. Translations are ordinary,
 independent posts with no pairing or automatic translation.
 
+The About and Now pages live in `zh/about.md`, `zh/now.md`, `en/about.md`,
+and `en/now.md`. Edit the Now pages as ordinary Markdown lists under Reading
+and Doing, and update their visible date when changing the entries.
+
+Search uses the theme's search panel with local substring matching for Chinese
+and English. `assets/search.json` indexes post titles and full content at build
+time; `assets/js/site-search.js` searches within the current locale. Multiple
+space-separated terms must all match. Set `search: false` on a post to omit it.
+
 ## Appearance
 
 Light and dark palettes default to the system's `prefers-color-scheme`. The

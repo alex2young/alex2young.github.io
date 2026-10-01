@@ -5,6 +5,15 @@
 {% assign labels = site.data.ui-text[controls_locale] %}
 <div class="site-controls">
   {% unless page.layout == 'language-selector' %}
+    {% if site.search %}
+      <button class="site-control search__toggle" type="button"
+        aria-label="{{ labels.search_label }}" aria-controls="search">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <circle cx="10.5" cy="10.5" r="6.5" />
+          <path d="m16 16 5 5" />
+        </svg>
+      </button>
+    {% endif %}
     <a class="site-control site-control--language"
       href="{{ other_language.home | relative_url }}"
       hreflang="{{ other_locale }}"

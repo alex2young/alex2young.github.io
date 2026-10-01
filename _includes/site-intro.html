@@ -1,4 +1,6 @@
 {% assign language = site.data.languages[page.locale] %}
+{% assign labels = site.data.ui-text[page.locale] %}
+{% unless paginator.page > 1 %}
 <section class="site-intro" aria-labelledby="site-intro-title">
   <div class="site-intro__body">
     <p class="site-intro__kicker">{{ language.kicker }}</p>
@@ -11,6 +13,9 @@
     <p class="site-intro__dek">
       {{ language.intro | default: language.description }}
     </p>
+    <a class="site-intro__browse" href="#posts">
+      {{ labels.browse_posts }} <span aria-hidden="true">↓</span>
+    </a>
   </div>
   <p class="site-intro__seal" aria-hidden="true">
     <span>बो</span>
@@ -19,5 +24,5 @@
     <span>त्त्व</span>
   </p>
 </section>
-
+{% endunless %}
 <div id="posts" class="post-list-anchor" aria-hidden="true"></div>
