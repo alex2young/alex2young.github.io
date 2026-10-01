@@ -1,5 +1,5 @@
 ---
-title: Image and the Shutter: Before the Overflow
+title: "Image and the Shutter: Before the Overflow"
 locale: en
 ---
 
