@@ -14,12 +14,10 @@ Updated 2026-10-01
 ## 2026
 
 - The Secret of the Golden Flower, Carl Jung
-- Nietzsche: Anti-Philosophy, Alain Badiou
 - A Parting of the Ways: Carnap, Cassirer, and Heidegger, Michael Friedman
 
 ## 2025
 
-- Nietzsche, Martin Heidegger
 - Harry Potter and the Sorcerer’s Stone, J. K. Rowling
 - Harry Potter and the Chamber of Secrets, J. K. Rowling
 - Submarines at Night, Chen Chuncheng
@@ -30,7 +28,6 @@ Updated 2026-10-01
 
 ## 2024
 
-- The Brothers Karamazov, Fyodor Dostoevsky
 - The Spirit of Wang Yangming’s Philosophy: The Realms of Being and Non-Being, Chen Lai
 - Life and Death Are Wearing Me Out, Mo Yan
 - 1587, A Year of No Significance, Ray Huang
@@ -39,15 +36,11 @@ Updated 2026-10-01
 - I Am Dynamite! A Life of Friedrich Nietzsche, Sue Prideaux
 - When Nietzsche Wept, Irvin D. Yalom
 - Who Is Nietzsche?, Alain Badiou
-- Nietzsche et la philosophie, Gilles Deleuze
 - Nietzsche, Martin Heidegger
 
 ## 2023
 
-- Socrates, Buddha, Confucius, Jesus, Karl Jaspers
 - On the Essence of Truth, Martin Heidegger
-- Ludwig Wittgenstein: The Duty of Genius, Ray Monk
-- The Perfection of Wisdom Sutra Spoken by Mañjuśrī
 - Scripture of Clarity and Stillness
 - Listening to Western Music, Craig Wright
 - Siddhartha, Hermann Hesse
@@ -75,17 +68,13 @@ Updated 2026-10-01
 - Clean Architecture, Robert C. Martin
 - Computer Systems: A Programmer’s Perspective, Randal Bryant
 - Java in a Nutshell, Evans & Flanagan
-- System Design material
-- Vert.x docs ;)
-- The Rust Programming Language
-- Designing Data-Intensive Applications
+- Designing Data-Intensive Applications, Martin Kleppmann
 - Ball Lightning, Cixin Liu
 - The Village Teacher, Cixin Liu
 
 ## 2021
 
 - A Tour of C++, Bjarne Stroustrup
-- Irrational Man, William Barrett
 - Technical Analysis of the Financial Markets, John J. Murphy
 - Nineteen Lectures on Chinese Philosophy, Mou Zongsan
 

@@ -14,14 +14,12 @@ permalink: /zh/now/
 ## 2026
 
 - 《金花的秘密》，卡尔·荣格
-- 《尼采：反哲学》，阿兰·巴迪欧
 - 《分道而行 - 卡尔纳普、卡西尔和海德格尔》，迈克尔·弗里德曼
 - 《中西印哲学导论》，张祥龙
 - 《维特根斯坦读本》，陈嘉映
 
 ## 2025
 
-- 尼采，马丁·海德格尔
 - Harry Potter and the Sorcerer’s Stone, J. K. Rowling
 - Harry Potter and the Chamber of Secrets, J. K. Rowling
 - 夜晚的潜水艇，陈春成
@@ -38,7 +36,6 @@ permalink: /zh/now/
 
 ## 2024
 
-- 卡拉马佐夫兄弟，陀思妥耶夫斯基
 - 有无之境·王阳明哲学的精神，陈来
 - 大圣传，说梦者
 - 神游，徐胜治
@@ -55,15 +52,11 @@ permalink: /zh/now/
 - 欲爱死，罗明落
 - Who Is Nietzsche?, Alain Badiou
 - 永夜微光·拉康与未竟之精神分析革命，沈志中
-- Nietzsche et la philosophie, Gilles Deleuze
 - 尼采，马丁·海德格尔
 
 ## 2023
 
-- 四大圣哲，卡尔·雅斯贝尔斯
 - 论真理的本质，马丁·海德格尔
-- 维特根斯坦传·天才之为责任，瑞·蒙克
-- 文殊师利所说摩诃般若波罗蜜经
 - 太上老君说常清静经
 - 海德格尔哲学概论，陈嘉映
 - 宋明理学十五讲，杨立华
@@ -73,7 +66,6 @@ permalink: /zh/now/
 - 现代西方哲学十五讲，张汝伦
 - 感知·理知·自我认知，陈嘉映
 - 悉达多，赫尔曼·黑塞
-- 说理，陈嘉映
 - 哲学·科学·常识，陈嘉映
 - 雅克·拉康 • 阅读你的症状 ，吴琼
 - Looking Awry: An Introduction to Jacques Lacan through Popular Culture, Slavoj Žižek
@@ -111,10 +103,7 @@ permalink: /zh/now/
 - Clean Architecture, Robert C. Martin
 - Computer Systems: A Programmer’s Perspective, Randal Bryant
 - Java in a Nutshell, Evans & Flanagan
-- System Design material
-- Vert.x docs ;)
-- The Rust Programming Language
-- Designing Data-Intensive Applications
+- Designing Data-Intensive Applications, Martin Kleppmann
 - 球状闪电，刘慈欣
 - 乡村教师，刘慈欣
 - 某某，木苏里
@@ -125,7 +114,6 @@ permalink: /zh/now/
 ## 2021
 
 - A Tour of C++, Bjarne Stroustrup
-- 非理性的人，威廉·巴雷特
 - 金融市场技术分析，约翰·墨菲
 - 中国哲学十九讲，牟宗三
 - 间客，猫腻

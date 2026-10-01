@@ -59,7 +59,8 @@ and `en/now.md`. Reading lists use yearly Markdown sections; update their
 visible date when changing entries. The Chinese list keeps the full record.
 The English list selects foreign works, Chinese classics, and established
 modern Chinese works with published or recognized English titles. Preserve
-the original years and relative order; use English titles and author names.
+the earliest reading year for each book and the relative order within each
+year; omit later repeats. Use English titles and author names in English.
 The existing `/zh/now/` and `/en/now/` URLs remain stable.
 
 Search uses the theme's search panel with local substring matching for Chinese
