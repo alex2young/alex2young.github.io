@@ -11,7 +11,7 @@ permalink: /zh/now/
 
 更新于 2026-10-01
 
-## 2026 年阅读
+## 2026
 
 - 《金花的秘密》，卡尔·荣格
 - 《尼采：反哲学》，阿兰·巴迪欧
@@ -19,7 +19,7 @@ permalink: /zh/now/
 - 《中西印哲学导论》，张祥龙
 - 《维特根斯坦读本》，陈嘉映
 
-## 2025 年阅读
+## 2025
 
 - 尼采，马丁·海德格尔
 - Harry Potter and the Sorcerer’s Stone, J. K. Rowling
@@ -36,7 +36,7 @@ permalink: /zh/now/
 - 思远道，陈嘉映
 - 尼采：反哲学，阿兰·巴迪欧
 
-## 2024 年阅读
+## 2024
 
 - 卡拉马佐夫兄弟，陀思妥耶夫斯基
 - 有无之境·王阳明哲学的精神，陈来
@@ -58,7 +58,7 @@ permalink: /zh/now/
 - Nietzsche et la philosophie, Gilles Deleuze
 - 尼采，马丁·海德格尔
 
-## 2023 年阅读
+## 2023
 
 - 四大圣哲，卡尔·雅斯贝尔斯
 - 论真理的本质，马丁·海德格尔
@@ -95,7 +95,7 @@ permalink: /zh/now/
 - 爱的多重奏，阿兰·巴迪欧
 - 卡拉马佐夫兄弟，陀思妥耶夫斯基
 
-## 2022 年阅读
+## 2022
 
 - 人生的智慧，叔本华
 - 庄子今注今译，陈鼓应
@@ -121,3 +121,31 @@ permalink: /zh/now/
 - 道诡异仙，狐尾的笔
 - 一世之尊，爱潜水的乌贼
 - 惊悚乐园，三天两觉
+
+## 2021
+
+- A Tour of C++, Bjarne Stroustrup
+- 非理性的人，威廉·巴雷特
+- 金融市场技术分析，约翰·墨菲
+- 中国哲学十九讲，牟宗三
+- 间客，猫腻
+- 奥术神座，爱潜水的乌贼
+- 非正常海域，凉蝉
+- 鬼吹灯，天下霸唱
+
+## 2020
+
+- 非理性的人，威廉·巴雷特
+- 老子，老子
+- The Pragmatic Programmer, David Thomas & Andrew Hunt
+- And Then There Were None, Agatha Christie
+- 中国历代政治得失，钱穆
+- Effective Java, Joshua Bloch
+- 富爸爸与穷爸爸，罗伯特·清崎、莎伦·莱希特
+- A Random Walk Down Wall Street, Burton G. Malkiel
+- 彼得·林奇的成功投资，彼得·林奇、约翰·罗瑟查尔德
+- The Intelligent Investor, Benjamin Graham
+- 红楼梦，曹雪芹
+- 三体，刘慈欣
+- 诡秘之主，爱潜水的乌贼
+- 军区大院，泡泡雪儿
