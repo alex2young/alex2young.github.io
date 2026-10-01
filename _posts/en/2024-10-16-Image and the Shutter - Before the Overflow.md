@@ -1,9 +1,12 @@
 ---
 title: "Image and the Shutter: Before the Overflow"
 locale: en
+excerpt: >-
+  But I have not yet learned how to press the shutter, and already I must begin
+  learning how not to
 ---
 
-The photographs from the past two weekends’ autumn outings near Boston are still on the camera’s memory card, not yet imported. Lightroom has 276 waiting for me, from late September’s visit to Acadia in Maine and the White Mountains in New Hampshire. And August’s trip to Alaska has become a 940-item task list on my hard drive, one I dare not open. <!--more-->
+The photographs from the past two weekends’ autumn outings near Boston are still on the camera’s memory card, not yet imported. Lightroom has 276 waiting for me, from late September’s visit to Acadia in Maine and the White Mountains in New Hampshire. And August’s trip to Alaska has become a 940-item task list on my hard drive, one I dare not open.
 
 I seem to have become less diligent about editing since I came back from Alaska in late August:
 

@@ -1,9 +1,10 @@
 ---
 title: Diaries and Nuts
 locale: en
+excerpt: >-
+  An old campus, a stone bench by the lake, a stack of paper and a few pens;
+  there would be so much to write
 ---
-
-> An old campus, a stone bench by the lake, a stack of paper and a few pens. There would be so much to write. <!--more-->
 
 ## The First Nut
 

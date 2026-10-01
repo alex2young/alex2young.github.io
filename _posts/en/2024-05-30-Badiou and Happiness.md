@@ -1,9 +1,12 @@
 ---
 title: Badiou and Happiness
 locale: en
+excerpt: >-
+  Happiness consists of enjoying the powerful and creative existence of
+  something that seemed impossible
 ---
 
-> Happiness consists of enjoying the powerful and creative existence of something that seemed impossible.<!--more-->  
+> Happiness consists of enjoying the powerful and creative existence of something that seemed impossible. <br />
 > — Alain Badiou
 
 2023 was a year in which I read a great deal. Toward its end, as autumn in New England thinned into winter, I borrowed Alain Badiou’s *Happiness* from Hayden Library at MIT. It was my first sustained encounter with Badiou. Not long afterward I began Deleuze’s *Nietzsche and Philosophy*, and for a while it became natural to read the two against each other.

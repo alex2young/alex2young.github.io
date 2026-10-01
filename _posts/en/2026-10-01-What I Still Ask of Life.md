@@ -1,9 +1,9 @@
 ---
 title: What I Still Ask of Life
 locale: en
+excerpt: >-
+  On reading Wittgenstein
 ---
-
-> On reading Wittgenstein <!--more-->
 
 I have found Wittgenstein difficult in a way that is not quite the difficulty of an obscure writer. Often I can follow his sentences, explain his examples, and even anticipate the misconception he is about to expose. Yet I remain unsure whether I have understood what matters. The explanation seems to leave me almost where I began.
 
@@ -20,7 +20,7 @@ There is, perhaps, an implicit ethics in this manner of philosophizing. It is no
 That seriousness takes a more explicitly ethical form in a notebook passage:
 
 > Even the nearest future cannot be known with certainty. In short, there are moments when I can live not merely in reality, but for the spirit. We should regard the beautiful moments of life as grace, enjoy them with gratitude, and otherwise be indifferent to life.  
-> - NB II, p. 24
+> — NB II, p. 24
 
 Here I felt the depth more directly. I also saw that I did not inhabit the attitude the passage expressed.
 

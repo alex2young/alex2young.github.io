@@ -54,6 +54,12 @@ Home pagination, archives, and previous/next links stay within that locale.
 Existing post URLs are preserved. Translations are ordinary,
 independent posts with no pairing or automatic translation.
 
+Set each post's summary with `excerpt` in its YAML front matter. Keep summary
+text separate from the body; do not use `<!--more-->` markers or add an opening
+blockquote solely for the summary. Empty posts use `excerpt: ""`.
+Prefer excerpts without full stops; omit terminal periods and use commas or
+semicolons between clauses where appropriate.
+
 The About and Reading pages live in `zh/about.md`, `zh/now.md`, `en/about.md`,
 and `en/now.md`. Reading lists use yearly Markdown sections; update their
 visible date when changing entries. The Chinese list keeps the full record.

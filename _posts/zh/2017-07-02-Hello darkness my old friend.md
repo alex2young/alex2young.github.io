@@ -1,8 +1,8 @@
 ---
 title: Hello darkness my old friend
+excerpt: >-
+  偶尔会幻想突然就插上了 $$S^2$$ 机关
 ---
-
-> 偶尔会幻想突然就插上了 $$S^2$$ 机关。<!--more-->
 
 ### Red Pill
 

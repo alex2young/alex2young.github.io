@@ -10,7 +10,6 @@ lang: zh-CN
 author: alex2young
 
 repository: alex2young/alex2young.github.io
-excerpt_separator: <!--more-->
 permalink: /:year/:month/:day/:title/
 
 pagination:

@@ -1,9 +1,9 @@
 ---
 title: The Roads Not Taken
 locale: en
+excerpt: >-
+  We tend to compare ourselves only with people we might have become
 ---
-
-> We tend to compare ourselves only with people we might have become. <!--more-->
 
 ### Making Money
 

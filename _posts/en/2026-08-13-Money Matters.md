@@ -1,9 +1,9 @@
 ---
 title: Money Matters
 locale: en
+excerpt: >-
+  Prices can return to where they were; time cannot
 ---
-
-> Prices can return to where they were. Time cannot. <!--more-->
 
 ### Breaking Even
 

@@ -1,9 +1,11 @@
 ---
 title: Affirmation Without a Guarantee
 locale: en
+excerpt: >-
+  The wounds of the Spirit heal, and leave no scars behind
 ---
 
-> The wounds of the Spirit heal, and leave no scars behind<!--more-->  
+> The wounds of the Spirit heal, and leave no scars behind <br />
 > — G. W. F. Hegel, *Phenomenology of Spirit*
 
 What troubles me about dialectic is not simply its reliance on negation. It is the suspicion that neither its affirmation nor its negation is entirely free. Affirmation must be earned through what opposes it, while negation is already expected to contribute to a reconciliation. The yes seems unable to begin; the no seems unable to break off. “Insincerity” may be an unfair word for this, but it names a real question: how much can a philosophy committed to reconciliation allow itself to lose?
